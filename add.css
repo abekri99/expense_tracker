@@ -1,0 +1,160 @@
+/* General styles */
+body{display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('finance_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+}
+
+
+/* Form box */
+#dashboard{
+    margin: 60px auto;
+
+    background: rgba(239, 236, 236, 0.8);
+    width: 500px;
+    height: 90%;
+    max-height: 700px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+
+/* Form labels */
+span {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+
+/* Inputs */
+input,
+select,
+textarea {
+
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 17px;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: none;
+    border-color: #3498db;
+}
+
+
+/* Submit button */
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 12px;
+
+
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    width: 50%;
+
+    background: #32688a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.02);
+
+    background: #2980ba;
+
+}
+
+
+/* Back link */
+a {
+
+    display: block;
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #3498db;
+    text-decoration: none;
+
+}
+
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* Mobile */
+@media(max-width:500px){
+    body{display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('finance_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+}
+
+    #dashboard {
+
+        width: 70%;
+        height: fit-content;
+        padding: 20px;
+
+    }
+    input{
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <title>adding page</title>
+</head>
+<body>
+    <div id="dashboard">
+        <div id="header">
+        <h1 id="title">Add your Transaction</h1>
+        </div>
+        <form onsubmit="add(event)">
+
+            <div>
+
+                <span id="title">Title</span>
+                <input type="text" id="title-input" required placeholder="enter your title">
+
+
+            </div>
+
+            <div>
+                <span id="date">Date</span>
+                <input type="date" id="date-input">
+
+
+            </div>
+            <div>
+                <span id="time">time</span>
+                <input type="time" id="time-input" required>
+
+
+            </div>
+
+            <div>
+                <span id="category">Catagory</span>
+                <select name="catagory" id="catagory-selection" required>
+                    <option value="" selected disabled>Select a catagory</option>
+                    <option value="income">income</option>
+                    <option value="gift">gift</option>
+                    <option value="groceries">groceries</option>
+                    <option value="utilities">utilities</option>
+                    <option value="rent">rent</option>
+                    <option value="transport">transport</option>
+
+                </select>
+            </div>
+
+            <div id="type">
+                <span id="type-title">Type</span>
+                <select name="type" id="in or out" required>
+                    <option value="" selected disabled>choose type</option>
+                    <option value="income"> 🔺income</option>
+                    <option value="expense"> 🔻expense</option>
+                </select>
+
+            </div>
+            
+            <div>
+                <span>Amount</span>
+                <input type="number" id="amount-input" placeholder="Enter amount">
+            </div>
+
+            <div id="buttons">
+                <button type="submit">Add</button>
+                <button type="button" id="cancel" onclick="window.location.href='index.html'">cancel</button>
+                <button type="reset"  id="reset"> reset</button>
+            </div>
+
+
+         </form>
+    </div>
+    <script src="add.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>personal expense tracker</title>
+</head>
+<body>
+<div class="bar">
+    <div class="dashboard">
+        <h1 class="title">wallet <span class="subtitle">wise</span></h1>
+
+    </div>
+    <div id="account">
+        <div id="total-dashboard">
+            <span for="total-title">Total Balance</span>
+            <h2 id="total-balance"> 0</h2>
+        </div>
+
+        <div id="add-transaction">
+            <div id="income-dashboard">
+                <span for="income-title">income</span>
+                <h3 id="income-balance"> 0</h3>
+
+
+            </div>
+            <div id="expense-dashboard">
+                <span for="expense-title">expense</span>
+                <h3 id="expense-balance"> 0 </h3>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="transaction-dashboard">
+        
+            <div id="transaction-header">
+                <span id="transaction-title">RECENT TRANSACRTION</span>
+                <button type="button" id="add-btn" onclick="window.location.href='add.html'">  + add transaction</button>
+            </div>
+        
+            <div>
+                <input type="search" name="search" id="search" placeholder="search...">
+                <button id="search-btn" onclick="searching()">search</button>
+            </div>
+             <div id="filter">
+                <button id="all-filter" class="active" onclick="setActive('all-filter');filtertransactions('all')">all</button>
+                <button id="income-filter" onclick="setActive('income-filter');filtertransactions('inc')">incomes</button>
+                <button id="expense-filter" onclick="setActive('expense-filter');filtertransactions('exp')">expenses</button>
+             </div>
+
+        
+
+        <div id="transaction-table">
+
+            <table id="table">
+                <tr id="table-header">
+                    <th>date</th>
+                    <th>time</th>
+                    <th>title</th>
+                    <th>catagory</th>
+                    <th>amount</th>
+                    <th>action</th>
+                </tr>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="dashboard2">
+        <div id="header">
+            <h1 id="edit-title">Edit your Transaction</h1><hr>
+        </div>
+        <div id="form-box">
+        <form onsubmit="return false;">
+
+            <div>
+
+                <span id="title">Title</span>
+                <input type="text" id="edit-title-input" required placeholder="enter your title">
+
+
+            </div>
+            
+            <div>
+                <span id="date">Date</span>
+                <input type="date" id="edit-date-input">
+
+
+            </div>
+            
+            <div>
+                <span id="category">Catagory</span>
+                <select name="catagory" id="edit-catagory-selection" required>
+                    <option value="" selected disabled>Select a catagory</option>
+                    <option value="income">income</option>
+                    <option value="gift">gift</option>
+                    <option value="groceries">groceries</option>
+                    <option value="utilities">utilities</option>
+                    <option value="rent">rent</option>
+                    <option value="transport">transport</option>
+
+
+
+                </select>
+            </div>
+
+            <div id="type">
+                <span id="type-title">Type</span>
+                <select name="type" id="edit-in-or-out" required>
+                    <option value="" selected disabled>choose type</option>
+                    <option value="income">🔺income</option>
+                    <option value="expense">🔻expense</option>
+                </select>
+
+            </div>
+            <div>
+                <span>Amount</span>
+                <input type="number" id="edit-amount-input" placeholder="Enter amount">
+            </div>
+
+            <div id="buttons">
+
+            
+                <button type="button" id="save" onclick="saveEdit()">save</button>
+                <button type="button" id="cancel" onclick="cancelEdit()">cancel</button>
+                <button type="reset"  id="reset"> reset</button>
+            </div>
+        
+
+        </form>
+        </div>
+
+
+
+
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
