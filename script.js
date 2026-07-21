@@ -31,13 +31,13 @@ function renderTransactions(transactions = getTransactions()) {
         const buttonsCell = document.createElement("td");
 
         const editBtn = document.createElement("button");
-        editBtn.textContent = "Edit";
+        editBtn.textContent = "✏️";
         editBtn.onclick = function () {
             openEditForm(transaction.id);
         };
 
         const deleteBtn = document.createElement("button");
-        deleteBtn.textContent = "Del";
+        deleteBtn.textContent = "🗑️";
        deleteBtn.onclick=function(){
 
     if(confirm("Delete this transaction?")){
