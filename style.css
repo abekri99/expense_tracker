@@ -146,9 +146,9 @@ body{
     font-weight: bolder;
      background: linear-gradient(145deg,
 
-    #062770,
-    #0a115c,
-    #6a6ca4);
+    #06266b,
+    #353a76,
+    #111595);
 }
 #add-btn:hover{
     transform: translateY(-2px) scale(1.03);
@@ -358,11 +358,11 @@ hr{
     border:2px solid rgb(203, 241, 247);
     border-radius:20px;
     padding:6px;
-    background: linear-gradient(145deg,
+     background: linear-gradient(145deg,
 
-    #062770,
-    #0a115c,
-    #6a6ca4);
+    #06266b,
+    #353a76,
+    #111595);
     color: white;
 }
 #search-btn:hover{
@@ -516,7 +516,8 @@ body{
 }
 
 #add-btn{
-    width:50%;
+    
+    width:100%;
     font-size:13px;
     margin-left:auto ;
     margin-bottom: 10px ;
@@ -621,5 +622,7 @@ hr{
     height:42px;
     font-size:15px;
 }
-
+#search-tab{
+    margin-left: auto;
+}
 }
