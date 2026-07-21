@@ -113,8 +113,8 @@ body{
 #transaction-dashboard{
 
     margin: -60px auto; ;
-    background-color: rgba(238, 242, 245, 0.96);
-    opacity: 0.98;
+    background-color: rgba(238, 242, 245, 0.95);
+    opacity: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -141,10 +141,14 @@ body{
 #add-btn{
     color: white;
     padding: 5px;
-    border: 2px outset #2256db;
+    border: 1px outset #85a2e4;
     border-radius: 5px;
     font-weight: bolder;
-    background-color: #2256db;
+     background: linear-gradient(145deg,
+
+    #062770,
+    #0a115c,
+    #6a6ca4);
 }
 #add-btn:hover{
     transform: translateY(-2px) scale(1.03);
@@ -215,19 +219,20 @@ body{
 }
 
 #table button:first-child {
-    background-color: #24B25B;
+    border: 1px solid rgb(201, 180, 180);
 }
 
 #table button:first-child:hover {
-    background-color: #1e934a;
+    background-color: #5375b0;
 }
 
 #table button:last-child {
-    background-color: #E5433A;
+    border: 1px solid rgb(201, 180, 180);
 }
 
+
 #table button:last-child:hover {
-    background-color: #c0392b;
+    background-color: rgba(182, 50, 50, 0.9);
 }
 #total-balance{
     margin: auto;
@@ -341,7 +346,7 @@ hr{
 
 }
 #search{
-    border:2px solid rgb(203, 241, 247);
+    border:2px solid rgb(40, 21, 93);
     border-radius:20px;
     padding:7px;
 }
@@ -353,7 +358,11 @@ hr{
     border:2px solid rgb(203, 241, 247);
     border-radius:20px;
     padding:6px;
-    background-color: #2256db;
+    background: linear-gradient(145deg,
+
+    #062770,
+    #0a115c,
+    #6a6ca4);
     color: white;
 }
 #search-btn:hover{
@@ -381,13 +390,13 @@ hr{
 }
 
 #filter button:hover{
-    color:#2256db;
-    border-bottom:3px solid #2256db;
+    color:#11265c;
+    border-bottom:3px solid #0b2055;
 }
 
 #filter button.active{
-    color:#2256db;
-    border-bottom:3px solid #2256db;
+    color:#203977;
+    border-bottom:3px solid #082166;
 }
 
 
@@ -527,6 +536,7 @@ body{
 
 #table th{
     font-size:14.5px;
+    font-weight: bolder;
     padding:8px;
 }
 
