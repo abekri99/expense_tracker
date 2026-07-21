@@ -49,7 +49,7 @@ body{
     #3243,
     rgb(70, 124, 177));
     margin-left: 30px;
-    padding: 10px;
+    padding: 7px;
     width: 60%;
     border-radius: 10px;
     font-weight: bolder;
@@ -72,6 +72,7 @@ body{
     height: 70px;
     border-radius: 10px;
 }
+
 
 #income-dashboard{
     padding: 20px;
@@ -112,7 +113,7 @@ body{
 #transaction-dashboard{
 
     margin: -60px auto; ;
-    background-color: azure;
+    background-color: rgba(238, 242, 245, 0.9);
     opacity: 0.95;
     padding: 20px;
     display: flex;
@@ -144,6 +145,10 @@ body{
     border-radius: 5px;
     font-weight: bolder;
     background-color: #2256db;
+}
+#add-btn:hover{
+    transform: translateY(-2px) scale(1.03);
+
 }
 #transaction-table{
     display: flex;
@@ -561,6 +566,24 @@ hr{
     padding:0;
     margin:0;
 }
+#dashboard2{
+    display: none;      
+    transform: translate(2%, -125%);
+    width: 300px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: outset #8496d1;
+    background-color: #e8ebf5;
+
+    box-shadow: 0 10px 300px;
+
+    flex-direction: column;
+
+    z-index: 9999;
+    padding: 20px;
+}
 
 #edit-title-input,
 #edit-date-input,
@@ -568,8 +591,8 @@ hr{
 #edit-in-or-out,
 #edit-amount-input{
     width:100%;
-    margin:6px 0;
-    padding:10px;
+    margin:auto;
+    padding:5px;
     font-size:15px;
 }
 
